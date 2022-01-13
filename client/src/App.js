@@ -11,6 +11,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <div>
+            <h1>Fib calculator</h1>
             <Link to="/">Home</Link>
             <Link to="/otherPage">Other Page</Link>
           </div>
