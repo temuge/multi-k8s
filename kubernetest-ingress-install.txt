@@ -1,0 +1,20 @@
+In order to install the ingress minikube:
+
+minikube addons enable ingress
+
+See https://kubernetes.github.io/ingress-nginx/deploy/#minikube
+
+In the production env GCP, we can use helm:
+
+https://kubernetes.github.io/ingress-nginx/deploy/
+
+First, I've installed the helm in the GCloud CL console:
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+Then, I ran the helm command to install ingress-nginx:
+
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm install my-release ingress-nginx/ingress-nginx
+
