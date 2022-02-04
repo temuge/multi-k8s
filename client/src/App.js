@@ -11,7 +11,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <div>
-            <h1>Fib calculator v2</h1>
+            <h1>Fib calculator KUBERNETES</h1>
             <Link to="/">Home</Link>
             <Link to="/otherPage">Other Page</Link>
           </div>
